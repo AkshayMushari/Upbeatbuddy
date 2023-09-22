@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}
+UpbeatBuddy
+{% endblock %}
+
+{% block content %}
+
+<main>
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+  <section class="left-sec">
+    <h2> We Are Here For Your Care</h2>
+    <h1> Upbeat Buddy</h1>
+    <p>We are here for your care 24/7. Any help just call us.</p>
+    <a href="/chatpage">
+      <button>
+        Let's talk
+      </button></a>
+  </section>
+
+  <section class="right-sec">
+    <figure>
+      <img src="{% static 'img.png' %}">
+    </figure>
+  </section>
+</main>
+
+{% endblock %}
